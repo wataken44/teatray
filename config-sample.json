@@ -1,0 +1,27 @@
+{
+  "general": {},
+  "hub": [
+    {
+      "adapter": [
+        {
+          "type": "core.adapter.skype_adapter.SkypeAdapter",
+          "id": "<adapter id, which must be unique in a hub>", 
+          "topic": "<topic of the bookmarked room>"
+        },
+        {
+          "type": "core.adapter.slack_adapter.SlackAdapter",
+          "id": "<adapter id>",
+          "api_token": "<slack api token>",
+          "channel": "<channel without #>"
+        },
+        {
+          "type": "core.adapter.hipchat_adapter.HipchatAdapter",
+          "id": "<adapter id>",
+          "api_token": "<hipchat personal access token>",
+          "room_id_or_name": "<room id or name>",
+          "handle": "<bot name>"
+        }
+      ]
+    }
+  ]
+}
